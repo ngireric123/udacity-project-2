@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom'
 import Nav from './Nav'
 import { handleaddquestion, onhome } from './Redux/Action'
 
-
 const CreateQuestion = ({ handleaddquestion, onhomeA, onhome }) => {
     useEffect(()=>{
         !onhome && onhomeA()

@@ -20,8 +20,6 @@ const Home = ({questions, loggedInUser, users, questionstodisplay, questions_to_
     else if(questionstodisplay ==="unanswered"){
         unans = "design"
     }
-    console.log(questions)
-    console.log(users[loggedInUser])
 
     return (
         <>

@@ -1,24 +1,24 @@
-import { lazy } from 'react';
+import { route } from 'react';
 
 const routes = [
   {
     path: 'home',
-    component: lazy(() => import('./Home')),
+    component: route(() => import('./Home')),
     exact: true
   },
   {
     path: 'add',
-    component: lazy(() => import('./createQuestion')),
+    component: route(() => import('./createQuestion')),
     exact: true
   },
   {
     path: 'leaderboard',
-    component: lazy(() => import('./LeaderBoard')),
+    component: route(() => import('./LeaderBoard')),
     exact: true
   },
   {
     path: 'questions/:id',
-    component: lazy(() => import('./LeaderBoard')),
+    component: route(() => import('./LeaderBoard')),
     exact: true
   }
 ];
